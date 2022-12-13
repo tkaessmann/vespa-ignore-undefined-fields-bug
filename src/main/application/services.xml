@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright Yahoo. Licensed under the terms of the Apache 2.0 license. See LICENSE in the project root. -->
+<services version="1.0">
+    <container id="default" version="1.0">
+        <nodes>
+            <node hostalias="node1"/>
+        </nodes>
+        <search/>
+        <document-api>
+            <ignore-undefined-fields>true</ignore-undefined-fields>
+        </document-api>
+        <document-processing/>
+    </container>
+
+    <content id="foo" version="1.0">
+        <documents>
+            <document mode="index" type="foo"/>
+        </documents>
+        <nodes>
+            <node hostalias="node1" distribution-key="0"/>
+        </nodes>
+        <redundancy>1</redundancy>
+    </content>
+
+</services>

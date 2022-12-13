@@ -1,0 +1,1 @@
+{"put": "id:foo:foo::124", "fields": {"i_do_not_exist": 0, "bar": 24709, "t_field": {"cells": {"solr": 1.0}}}}

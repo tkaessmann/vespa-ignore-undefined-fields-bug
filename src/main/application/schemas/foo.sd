@@ -1,0 +1,24 @@
+schema foo {
+
+    document foo {
+        field bar_s type string {
+            indexing: summary | attribute
+        }
+
+        field t_field type tensor<float>(t{}) {
+            indexing: summary | attribute
+        }
+
+        field bar type int {
+            indexing: summary | attribute
+        }
+    }
+
+    rank-profile term_rank {
+        first-phase {
+            expression {
+                1
+            }
+        }
+    }
+}
